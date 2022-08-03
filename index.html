@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloredbyte test</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Swiper library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- Script Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <div class="container">
+        <header class="header">
+            <img class="header-img" src="https://img.freepik.com/foto-gratis/retrato-hombre-blanco-aislado_53876-40306.jpg?w=2000" alt="">
+            <div class="header-text">
+                <p class="header-name">Jeremias Spinosa</p>
+                <p>San Francisco, California</p>
+            </div>
+        </header>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div id="image-1" class="swiper-slide">
+                    <!-- <img class="swiper-img"src="https://picsum.photos/600/400" alt=""> -->
+                </div>
+                <div id="image-2" class="swiper-slide">
+                    <!-- <img class="swiper-img" src="https://picsum.photos/600/400" alt=""> -->
+                </div>
+                <div id="image-3" class="swiper-slide">
+                    <!-- <img class="swiper-img" src="https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg?" alt=""> -->
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+        </div>
+
+        <div class="iconContainer">
+            <!-- <img class="icon" src="icons/corazon.png"> -->
+            <svg id="heart" class="icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            <!-- <img class="icon" src="icons/comentar.png"> -->
+            <svg class="icon chat"xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            <!-- <img class="icon send" src="icons/enviar.png"> -->
+            <svg class="icon send" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>
+        </div>
+
+        <div class="post-description">
+            <span class="name-description">
+                Jeremias Spinosa
+            </span> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at consequat ligula. Mauris eu fringilla dolor. Nullam a ex sit.    
+        </div>
+
+        <div id="comments-container" class="comments-container">
+            <p class="comment"><span class="comment-bold"> Comment </span> Que buena foto!</p>
+        </div>
+
+        <form id="form" class="input-container">
+            <input id="input-text" class="input-text" type="text"><input id="submit-button" class="submit-button" type="submit" value="Post"> </input> 
+        </form>
+
+    </div>
+    
+    <script src="scripts.js"></script>
+
+</body>
+</html>
